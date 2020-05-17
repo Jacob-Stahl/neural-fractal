@@ -20,5 +20,4 @@ class LogDecoder(nn.Module):
             for j in range(self.scale_range):
                 out[i] = out[i] + mags[i] * 2 ** -(j + self.scale_shift)
 
-        return outs
-        
+        return out
